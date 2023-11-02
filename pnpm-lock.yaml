@@ -5,12 +5,18 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@astrojs/preact':
+    specifier: ^3.0.1
+    version: registry.npmmirror.com/@astrojs/preact@3.0.1(@babel/core@7.23.2)(preact@10.18.1)(vite@4.5.0)
   '@astrojs/rss':
     specifier: ^3.0.0
     version: registry.npmmirror.com/@astrojs/rss@3.0.0
   astro:
     specifier: ^3.4.0
     version: registry.npmmirror.com/astro@3.4.0
+  preact:
+    specifier: ^10.6.5
+    version: registry.npmmirror.com/preact@10.18.1
 
 packages:
 
@@ -61,6 +67,28 @@ packages:
       vfile: registry.npmmirror.com/vfile@5.3.7
     transitivePeerDependencies:
       - supports-color
+    dev: false
+
+  registry.npmmirror.com/@astrojs/preact@3.0.1(@babel/core@7.23.2)(preact@10.18.1)(vite@4.5.0):
+    resolution: {integrity: sha512-pAfN+U7J4hw7qijqkBx1ZBpPO+ooa+MkKIgshCozfqsHTp18uPflxQUviz0TEzB5nn7hSndzncWuc3pz/HbtJw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@astrojs/preact/-/preact-3.0.1.tgz}
+    id: registry.npmmirror.com/@astrojs/preact/3.0.1
+    name: '@astrojs/preact'
+    version: 3.0.1
+    engines: {node: '>=18.14.1'}
+    peerDependencies:
+      preact: ^10.6.5
+    dependencies:
+      '@babel/plugin-transform-react-jsx': registry.npmmirror.com/@babel/plugin-transform-react-jsx@7.22.15(@babel/core@7.23.2)
+      '@babel/plugin-transform-react-jsx-development': registry.npmmirror.com/@babel/plugin-transform-react-jsx-development@7.22.5(@babel/core@7.23.2)
+      '@preact/preset-vite': registry.npmmirror.com/@preact/preset-vite@2.6.0(@babel/core@7.23.2)(preact@10.18.1)(vite@4.5.0)
+      '@preact/signals': registry.npmmirror.com/@preact/signals@1.2.1(preact@10.18.1)
+      babel-plugin-transform-hook-names: registry.npmmirror.com/babel-plugin-transform-hook-names@1.0.2(@babel/core@7.23.2)
+      preact: registry.npmmirror.com/preact@10.18.1
+      preact-render-to-string: registry.npmmirror.com/preact-render-to-string@6.2.2(preact@10.18.1)
+    transitivePeerDependencies:
+      - '@babel/core'
+      - supports-color
+      - vite
     dev: false
 
   registry.npmmirror.com/@astrojs/prism@3.0.0:
@@ -317,6 +345,19 @@ packages:
     dependencies:
       '@babel/core': registry.npmmirror.com/@babel/core@7.23.2
       '@babel/helper-plugin-utils': registry.npmmirror.com/@babel/helper-plugin-utils@7.22.5
+    dev: false
+
+  registry.npmmirror.com/@babel/plugin-transform-react-jsx-development@7.22.5(@babel/core@7.23.2):
+    resolution: {integrity: sha512-bDhuzwWMuInwCYeDeMzyi7TaBgRQei6DqxhbyniL7/VG4RSS7HtSL2QbY4eESy1KJqlWt8g3xeEBGPuo+XqC8A==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@babel/plugin-transform-react-jsx-development/-/plugin-transform-react-jsx-development-7.22.5.tgz}
+    id: registry.npmmirror.com/@babel/plugin-transform-react-jsx-development/7.22.5
+    name: '@babel/plugin-transform-react-jsx-development'
+    version: 7.22.5
+    engines: {node: '>=6.9.0'}
+    peerDependencies:
+      '@babel/core': ^7.0.0-0
+    dependencies:
+      '@babel/core': registry.npmmirror.com/@babel/core@7.23.2
+      '@babel/plugin-transform-react-jsx': registry.npmmirror.com/@babel/plugin-transform-react-jsx@7.22.15(@babel/core@7.23.2)
     dev: false
 
   registry.npmmirror.com/@babel/plugin-transform-react-jsx@7.22.15(@babel/core@7.23.2):
@@ -929,6 +970,101 @@ packages:
       fastq: registry.npmmirror.com/fastq@1.15.0
     dev: false
 
+  registry.npmmirror.com/@preact/preset-vite@2.6.0(@babel/core@7.23.2)(preact@10.18.1)(vite@4.5.0):
+    resolution: {integrity: sha512-5nztNzXbCpqyVum/K94nB2YQ5PTnvWdz4u7/X0jc8+kLyskSSpkNUxLQJeI90zfGSFIX1Ibj2G2JIS/mySHWYQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@preact/preset-vite/-/preset-vite-2.6.0.tgz}
+    id: registry.npmmirror.com/@preact/preset-vite/2.6.0
+    name: '@preact/preset-vite'
+    version: 2.6.0
+    peerDependencies:
+      '@babel/core': 7.x
+      vite: 2.x || 3.x || 4.x
+    dependencies:
+      '@babel/core': registry.npmmirror.com/@babel/core@7.23.2
+      '@babel/plugin-transform-react-jsx': registry.npmmirror.com/@babel/plugin-transform-react-jsx@7.22.15(@babel/core@7.23.2)
+      '@babel/plugin-transform-react-jsx-development': registry.npmmirror.com/@babel/plugin-transform-react-jsx-development@7.22.5(@babel/core@7.23.2)
+      '@prefresh/vite': registry.npmmirror.com/@prefresh/vite@2.4.3(preact@10.18.1)(vite@4.5.0)
+      '@rollup/pluginutils': registry.npmmirror.com/@rollup/pluginutils@4.2.1
+      babel-plugin-transform-hook-names: registry.npmmirror.com/babel-plugin-transform-hook-names@1.0.2(@babel/core@7.23.2)
+      debug: registry.npmmirror.com/debug@4.3.4
+      kolorist: registry.npmmirror.com/kolorist@1.8.0
+      resolve: registry.npmmirror.com/resolve@1.22.8
+      vite: registry.npmmirror.com/vite@4.5.0
+    transitivePeerDependencies:
+      - preact
+      - supports-color
+    dev: false
+
+  registry.npmmirror.com/@preact/signals-core@1.5.0:
+    resolution: {integrity: sha512-U2diO1Z4i1n2IoFgMYmRdHWGObNrcuTRxyNEn7deSq2cru0vj0583HYQZHsAqcs7FE+hQyX3mjIV7LAfHCvy8w==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@preact/signals-core/-/signals-core-1.5.0.tgz}
+    name: '@preact/signals-core'
+    version: 1.5.0
+    dev: false
+
+  registry.npmmirror.com/@preact/signals@1.2.1(preact@10.18.1):
+    resolution: {integrity: sha512-hRPvp1C2ooDzOHqfnhdpHgoIFDbYFAXLhoid3+jSItuPPD/J0r/UsiWKv/8ZO/oEhjRaP0M5niuRYsWqmY2GEA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@preact/signals/-/signals-1.2.1.tgz}
+    id: registry.npmmirror.com/@preact/signals/1.2.1
+    name: '@preact/signals'
+    version: 1.2.1
+    peerDependencies:
+      preact: 10.x
+    dependencies:
+      '@preact/signals-core': registry.npmmirror.com/@preact/signals-core@1.5.0
+      preact: registry.npmmirror.com/preact@10.18.1
+    dev: false
+
+  registry.npmmirror.com/@prefresh/babel-plugin@0.5.0:
+    resolution: {integrity: sha512-joAwpkUDwo7ZqJnufXRGzUb+udk20RBgfA8oLPBh5aJH2LeStmV1luBfeJTztPdyCscC2j2SmZ/tVxFRMIxAEw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@prefresh/babel-plugin/-/babel-plugin-0.5.0.tgz}
+    name: '@prefresh/babel-plugin'
+    version: 0.5.0
+    dev: false
+
+  registry.npmmirror.com/@prefresh/core@1.5.2(preact@10.18.1):
+    resolution: {integrity: sha512-A/08vkaM1FogrCII5PZKCrygxSsc11obExBScm3JF1CryK2uDS3ZXeni7FeKCx1nYdUkj4UcJxzPzc1WliMzZA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@prefresh/core/-/core-1.5.2.tgz}
+    id: registry.npmmirror.com/@prefresh/core/1.5.2
+    name: '@prefresh/core'
+    version: 1.5.2
+    peerDependencies:
+      preact: ^10.0.0
+    dependencies:
+      preact: registry.npmmirror.com/preact@10.18.1
+    dev: false
+
+  registry.npmmirror.com/@prefresh/utils@1.2.0:
+    resolution: {integrity: sha512-KtC/fZw+oqtwOLUFM9UtiitB0JsVX0zLKNyRTA332sqREqSALIIQQxdUCS1P3xR/jT1e2e8/5rwH6gdcMLEmsQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@prefresh/utils/-/utils-1.2.0.tgz}
+    name: '@prefresh/utils'
+    version: 1.2.0
+    dev: false
+
+  registry.npmmirror.com/@prefresh/vite@2.4.3(preact@10.18.1)(vite@4.5.0):
+    resolution: {integrity: sha512-diQ8AW+Y2i1QEhO64t2hhV8WFP9X0/NAxuSd9eRlVyS3LOs3RgGOwjOmLoJqwCmIbdq5Szq983gO+xdW/l0G6A==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@prefresh/vite/-/vite-2.4.3.tgz}
+    id: registry.npmmirror.com/@prefresh/vite/2.4.3
+    name: '@prefresh/vite'
+    version: 2.4.3
+    peerDependencies:
+      preact: ^10.4.0
+      vite: '>=2.0.0'
+    dependencies:
+      '@babel/core': registry.npmmirror.com/@babel/core@7.23.2
+      '@prefresh/babel-plugin': registry.npmmirror.com/@prefresh/babel-plugin@0.5.0
+      '@prefresh/core': registry.npmmirror.com/@prefresh/core@1.5.2(preact@10.18.1)
+      '@prefresh/utils': registry.npmmirror.com/@prefresh/utils@1.2.0
+      '@rollup/pluginutils': registry.npmmirror.com/@rollup/pluginutils@4.2.1
+      preact: registry.npmmirror.com/preact@10.18.1
+      vite: registry.npmmirror.com/vite@4.5.0
+    transitivePeerDependencies:
+      - supports-color
+    dev: false
+
+  registry.npmmirror.com/@rollup/pluginutils@4.2.1:
+    resolution: {integrity: sha512-iKnFXr7NkdZAIHiIWE+BX5ULi/ucVFYWD6TbAV+rZctiRTY2PL6tsIKhoIOaoskiWAkgu+VsbXgUVDNLHf+InQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@rollup/pluginutils/-/pluginutils-4.2.1.tgz}
+    name: '@rollup/pluginutils'
+    version: 4.2.1
+    engines: {node: '>= 8.0.0'}
+    dependencies:
+      estree-walker: registry.npmmirror.com/estree-walker@2.0.2
+      picomatch: registry.npmmirror.com/picomatch@2.3.1
+    dev: false
+
   registry.npmmirror.com/@types/babel__core@7.20.3:
     resolution: {integrity: sha512-54fjTSeSHwfan8AyHWrKbfBWiEUrNTZsUwPTDSNaaP1QDQIZbeNUg3a59E9D+375MzUw/x1vx2/0F5LBz+AeYA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/babel__core/-/babel__core-7.20.3.tgz}
     name: '@types/babel__core'
@@ -1211,6 +1347,17 @@ packages:
     requiresBuild: true
     dev: false
     optional: true
+
+  registry.npmmirror.com/babel-plugin-transform-hook-names@1.0.2(@babel/core@7.23.2):
+    resolution: {integrity: sha512-5gafyjyyBTTdX/tQQ0hRgu4AhNHG/hqWi0ZZmg2xvs2FgRkJXzDNKBZCyoYqgFkovfDrgM8OoKg8karoUvWeCw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/babel-plugin-transform-hook-names/-/babel-plugin-transform-hook-names-1.0.2.tgz}
+    id: registry.npmmirror.com/babel-plugin-transform-hook-names/1.0.2
+    name: babel-plugin-transform-hook-names
+    version: 1.0.2
+    peerDependencies:
+      '@babel/core': ^7.12.10
+    dependencies:
+      '@babel/core': registry.npmmirror.com/@babel/core@7.23.2
+    dev: false
 
   registry.npmmirror.com/bail@2.0.2:
     resolution: {integrity: sha512-0xO6mYd7JB2YesxDKplafRpsiOzPt9V02ddPCLbY1xYGPOX24NTyN50qnUxgCPcSoYMhKpAuBTjQoRZCAkUDRw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/bail/-/bail-2.0.2.tgz}
@@ -1788,6 +1935,12 @@ packages:
     version: 4.0.1
     engines: {node: '>=4'}
     hasBin: true
+    dev: false
+
+  registry.npmmirror.com/estree-walker@2.0.2:
+    resolution: {integrity: sha512-Rfkk/Mp/DL7JVje3u18FxFujQlTNR2q6QfMSMB7AvCBx91NGj/ba3kCfza0f6dVDbw7YlRf/nDrn7pQrCCyQ/w==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/estree-walker/-/estree-walker-2.0.2.tgz}
+    name: estree-walker
+    version: 2.0.2
     dev: false
 
   registry.npmmirror.com/estree-walker@3.0.3:
@@ -2464,6 +2617,12 @@ packages:
     name: kleur
     version: 4.1.5
     engines: {node: '>=6'}
+    dev: false
+
+  registry.npmmirror.com/kolorist@1.8.0:
+    resolution: {integrity: sha512-Y+60/zizpJ3HRH8DCss+q95yr6145JXZo46OTpFvDZWLfRCE4qChOyk1b26nMaNpfHHgxagk9dXT5OP0Tfe+dQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/kolorist/-/kolorist-1.8.0.tgz}
+    name: kolorist
+    version: 1.8.0
     dev: false
 
   registry.npmmirror.com/load-yaml-file@0.2.0:
@@ -3457,6 +3616,24 @@ packages:
       source-map-js: registry.npmmirror.com/source-map-js@1.0.2
     dev: false
 
+  registry.npmmirror.com/preact-render-to-string@6.2.2(preact@10.18.1):
+    resolution: {integrity: sha512-YDfXQiVeYZutFR8/DpxLSbW3W6b7GgjBExRBxOOqcjrGq5rA9cziitQdNPMZe4RVMSdfBnf4hYqyeLs/KvtIuA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/preact-render-to-string/-/preact-render-to-string-6.2.2.tgz}
+    id: registry.npmmirror.com/preact-render-to-string/6.2.2
+    name: preact-render-to-string
+    version: 6.2.2
+    peerDependencies:
+      preact: '>=10'
+    dependencies:
+      preact: registry.npmmirror.com/preact@10.18.1
+      pretty-format: registry.npmmirror.com/pretty-format@3.8.0
+    dev: false
+
+  registry.npmmirror.com/preact@10.18.1:
+    resolution: {integrity: sha512-mKUD7RRkQQM6s7Rkmi7IFkoEHjuFqRQUaXamO61E6Nn7vqF/bo7EZCmSyrUnp2UWHw0O7XjZ2eeXis+m7tf4lg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/preact/-/preact-10.18.1.tgz}
+    name: preact
+    version: 10.18.1
+    dev: false
+
   registry.npmmirror.com/prebuild-install@7.1.1:
     resolution: {integrity: sha512-jAXscXWMcCK8GgCoHOfIr0ODh5ai8mj63L2nWrjuAgXE6tDyYGnx4/8o/rCgU+B4JSyZBKbeZqzhtwtC3ovxjw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/prebuild-install/-/prebuild-install-7.1.1.tgz}
     name: prebuild-install
@@ -3490,6 +3667,12 @@ packages:
       find-yarn-workspace-root2: registry.npmmirror.com/find-yarn-workspace-root2@1.2.16
       path-exists: registry.npmmirror.com/path-exists@4.0.0
       which-pm: registry.npmmirror.com/which-pm@2.0.0
+    dev: false
+
+  registry.npmmirror.com/pretty-format@3.8.0:
+    resolution: {integrity: sha512-WuxUnVtlWL1OfZFQFuqvnvs6MiAGk9UNsBostyBOB0Is9wb5uRESevA6rnl/rkksXaGX3GzZhPup5d6Vp1nFew==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/pretty-format/-/pretty-format-3.8.0.tgz}
+    name: pretty-format
+    version: 3.8.0
     dev: false
 
   registry.npmmirror.com/prismjs@1.29.0:
